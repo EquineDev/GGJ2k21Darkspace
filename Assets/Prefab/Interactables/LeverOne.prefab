@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8173251431319915691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3919490635492571276}
+  - component: {fileID: 7904482770223130554}
+  - component: {fileID: 4555130799916426000}
+  m_Layer: 0
+  m_Name: LeverOne
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3919490635492571276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173251431319915691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7904482770223130554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173251431319915691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db73d0852353c8d4b86519a55a52feb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultInteraction: pull
+  verbsDict:
+  - key: pull
+    value: leverone
+  - key: push
+    value: leverone
+  - key: flip
+    value: leverone
+  statesDict:
+  - key: leverone
+    value: event
+  verbTargetsDict: []
+  interact: {fileID: 8300000, guid: c4af46a80a8f60444a408705dae63324, type: 3}
+  description: {fileID: 0}
+  name: {fileID: 0}
+  audioSource: {fileID: 0}
+  nameString: left lever
+  isTakable: 0
+  isOneTimeUse: 0
+--- !u!114 &4555130799916426000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173251431319915691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ebb53db76d92b428a1e68e2cf9001e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: ff5ac879c4a6a45ae8f8136a2249b1b8, type: 3}
+  eventName: leverone
+  state: 0
